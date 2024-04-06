@@ -1,16 +1,3 @@
 "use strict";
-let personName = '';
-personName = prompt('Whar is your name?') || '';
-let lowercase = personName.toLowerCase();
-let uppercase = personName.toUpperCase();
-let titlecase = personName.split(' ').map(word => word.charAt(0).toUpperCase() + word.slice(1).
-    toLowerCase()).join(' ');
-if (personName !== null && personName !== '') {
-    alert(`Hello ${personName}, Here are your name in:
-    lowercase: ${lowercase}
-    upppercase: ${uppercase}
-    Titlecase:${titlecase}`);
-}
-else {
-    alert('please fill your name !');
-}
+let personName = "ERIC";
+console.log(`hello ${personName} would you like to learn some python today?`);
