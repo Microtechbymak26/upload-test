@@ -1,18 +1,13 @@
-let personName : string = '';
+// lower case
+let personName: string ="Ateeb"
+console.log("lowercase:", personName.toLowerCase());
 
- personName = prompt('Whar is your name?')|| '';
+// upper case
+console.log("uppercase:", personName.toLocaleUpperCase());
 
-let lowercase : string = personName.toLowerCase();
-let uppercase : string = personName.toUpperCase();
-let titlecase : string = personName.split(' ').map(word => word.charAt(0).toUpperCase() + word.slice(1).
-toLowerCase()).join(' ')
-
-if(personName !== null && personName !==''){
-    alert(`Hello ${personName}, Here are your name in:
-    lowercase: ${lowercase}
-    upppercase: ${uppercase}
-    Titlecase:${titlecase}`)
-}
-else{
-    alert('please fill your name !')
-}
+// Tittle case
+console.log("tittlecase:", personName.replace(/\bw/g,c => c.toUpperCase()));
+// number addition multiplication and %
+let a : number =29;
+let b : number =30;
+console.log("a * b=",a * b);
